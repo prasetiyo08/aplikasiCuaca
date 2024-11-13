@@ -1,0 +1,158 @@
+body {
+    background-image: url('/img/sky.png'); /* Masukkan path gambar */
+    background-size: cover; /* Agar gambar menutupi seluruh area */
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+    background-position: center; /* Memposisikan gambar di tengah */
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.main-content {
+    flex-grow: 1;
+    text-align: center;
+}
+
+footer {
+    color: #ffffff;
+    border-top: 1px solid #eeeeee;
+    margin-top: 16px;
+    padding: 16px 0;
+    text-align: center;
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+.headline-tentang {
+    font-size: 32px;
+}
+
+.deskripsi-tentang {
+    font-size: 26px;
+    color: #ffffff;
+}
+
+.judul-bantuan {
+    font-size: 32px;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+header a {
+    color: #fafafa;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+input {
+    border: 2px solid #cccccc;
+    padding: 8px;
+    font-size: 16px;
+    width: 80%;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+input:focus {
+    border-color: #ffffff;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: #ffffff;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffffff;
+}
+
+.loader {
+    display: none;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #ffffff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 16px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.message {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#pesan-1 {
+    color:  #c75408; /* Error color */
+}
+
+#pesan-2 {
+    color: #4caf50; /* Success color */
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0 8px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    input, button {
+        width: 100%;
+    }
+}
+
+.portrait {
+    width: 250px;
+}
+
+/* Atur tampilan potrait untuk gambar */
+.potrait {
+    width: 250px;           /* Sesuaikan lebar gambar */
+    height: auto;           /* Menjaga rasio gambar */
+    border-radius: 8px;     /* Berikan sedikit sudut membulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Tambahkan bayangan */
+    margin: 16px 0;         /* Jarak vertikal dari elemen lain */
+    display: block;         /* Agar gambar center saat di margin auto */
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centering gambar secara horizontal */
+}

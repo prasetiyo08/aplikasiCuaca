@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Frequently Asked Questions (FAQ)</title>
+        <link rel="icon" href="/img/cuaca.png"> 
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <div class="main-content">
+                <h1>Berita Terkini</h1>
+                <p><em>"Mengetahui kondisi terkini di Indonesia."</em></p>
+                <div class="news-items">
+                    {{#each berita}} <!-- Looping untuk menampilkan data berita -->
+                    <div class="news-item">
+                        <h3>{{title}}</h3>
+                        <p>{{description}}</p>
+                        <a href="{{url}}" target="_blank">Baca Selengkapnya</a> <!-- Link ke artikel -->
+                    </div>
+                    {{/each}}
+                </div>
+        </div>
+        {{>footer}}
+    </body>
+</html>

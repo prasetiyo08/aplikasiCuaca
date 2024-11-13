@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Ini adalah halaman bantuan</title>
+        <link rel="icon" href="/img/cuaca.png"> 
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <h1 class="judul-bantuan">Frequently Asked Questions (FAQ)</h1>
+        </div>
+        <div class="faq-items">
+            <h3>Q : Halaman ini digunakan untuk apa?</h3>
+            <p>A: Halaman ini digunakan untuk memberikan
+             informasi tentang aplikasi, termasuk pertanyaan
+             umum dan penjelasan tentang API yang digunakan
+             dalam aplikasi ini.</p>
+        </div>
+        <div class="faq-items">
+            <h3>Q : Apa itu API?</h3>
+            <p>A: API (Application Programming Interface)
+             adalah antarmuka yang memungkinkan berbagai 
+             aplikasi untuk saling berkomunikasi dan
+             bertukar data.</p>
+        </div>
+        <div class="faq-items">
+            <h3>Q: API apa yang digunakan dalam aplikasi ini?</h3>
+            <p>A: Aplikasi ini menggunakan tiga API utama: Positionstack: Digunakan untuk layanan geolocation, membantu aplikasi mendapatkan informasi lokasi berdasarkan koordinat.
+                Weatherstack: Menyediakan data cuaca secara real-time, memungkinkan aplikasi untuk menampilkan informasi cuaca saat ini.
+                Mediastack: Memberikan akses ke berita dan konten media terbaru, sehingga aplikasi dapat menampilkan berita terkini kepada pengguna.</p>
+        </div>
+        <div class="faq-items">
+            <h3>Q: Salah satu pola arsitektur API adalah RESTful. Apa itu RESTful API?</h3>
+            <p>A: RESTful API adalah jenis arsitektur API yang memungkinkan klien dan server berinteraksi menggunakan metode HTTP seperti GET, POST, PUT, dan DELETE. RESTful API dirancang untuk kemudahan penggunaan dan fleksibilitas.</p>
+        </div>
+        <div class="faq-items">
+            <h3>Q : Kesimpulan API?</h3>
+            <p>API (Application Programming Interface) adalah sekumpulan aturan dan protokol yang memungkinkan berbagai aplikasi perangkat lunak untuk saling berkomunikasi. API berfungsi sebagai jembatan antara sistem yang berbeda, memungkinkan pertukaran data dan pelaksanaan tugas tertentu.</p>
+        </div>
+        {{>footer}}
+    </body>
+</html>
